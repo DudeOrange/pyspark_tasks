@@ -1,0 +1,14 @@
+
+
+services:
+  localhost:
+    image: postgres:13.3
+    environment:
+      POSTGRES_DB: "sql_ex_data"
+      POSTGRES_USER: "user"
+      POSTGRES_PASSWORD: "password"
+    volumes:
+      - ./sql_ex_pg.sql:/docker-entrypoint-initdb.d/init.sql
+      - "F:/sql_ex_db:/var/lib/postgresql/data:rw"
+    ports:
+      - "5432:5432"

@@ -1,0 +1,1 @@
+# Spark tasks #---Решение задач сайта [sql-ex](https://www.sql-ex.ru/?Lang=0) на PySpark без использования sql.Используется база данных Postgres, запущенная в Docker-контейнере.Решения находятся в файле spark_solutions.ipynb
